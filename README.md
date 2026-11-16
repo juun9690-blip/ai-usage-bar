@@ -6,6 +6,30 @@ Codex · Claude Code · Antigravity 사용 한도를 한눈에 확인하는 macO
 
 [앱 다운로드 / Releases](https://github.com/juun9690-blip/ai-usage-bar/releases) · [변경 기록](CHANGELOG.md) · [버전 업데이트 방법](docs/RELEASING.md)
 
+## 프로젝트 연결 정보와 작업 규칙
+
+이 프로젝트는 아래 공개 GitHub 저장소와 연결되어 있습니다. **디자인·기능·문서를 수정하고 검수를 마치면, 로컬 파일만 남기지 말고 GitHub에도 항상 커밋·푸시합니다.**
+
+| 항목 | 연결 정보 |
+| --- | --- |
+| GitHub 저장소 | [juun9690-blip/ai-usage-bar](https://github.com/juun9690-blip/ai-usage-bar) |
+| Git 원격 이름 | `origin` |
+| 원격 주소 | `https://github.com/juun9690-blip/ai-usage-bar.git` |
+| 기본 브랜치 | `main` |
+| 앱 다운로드 | [GitHub Releases](https://github.com/juun9690-blip/ai-usage-bar/releases) |
+| AI 작업 지침 | [AGENTS.md](AGENTS.md) |
+
+### 수정 작업을 마칠 때
+
+1. 작업 전 현재 브랜치·원격·기존 변경 사항을 확인합니다.
+2. 요청받은 수정을 적용하고 변경에 맞는 검수를 합니다.
+3. 해당 작업의 변경 파일을 확인해 커밋하고, 현재 작업 브랜치를 `origin`에 푸시합니다. 별도 작업 브랜치나 PR을 사용 중이면 그 흐름을 유지합니다.
+4. GitHub에 해당 커밋이 올라간 것을 확인한 뒤, 변경 내용·검수 결과·커밋 또는 PR 링크를 보고합니다.
+
+사용자가 별도로 “로컬에서만 수정”, “아직 올리지 마”라고 요청하지 않는 한 GitHub 반영까지 작업 범위에 포함합니다. 관련 없는 기존 변경 사항을 임의로 함께 올리지 않으며, 인증·네트워크 등으로 푸시에 실패하면 로컬 완료와 GitHub 미반영을 구분해 알립니다.
+
+이것은 작업 완료 규칙이며, 파일을 저장할 때마다 자동으로 푸시하는 프로그램은 아닙니다. **소스 동기화와 새 앱 배포는 구분합니다.** 수정한 소스는 항상 반영하되, 새 앱 버전·태그·Release는 배포 요청이 있을 때 [버전 업데이트 절차](docs/RELEASING.md)에 따라 진행합니다. 기존에 설치된 앱은 GitHub 소스가 갱신되는 것만으로 바뀌지 않습니다.
+
 ## 주요 기능
 
 - 제공되는 5시간·주간 한도와 초기화까지 남은 시간 표시
